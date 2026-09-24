@@ -8,13 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#09090B',
-        'background-secondary': '#111113',
-        card: '#151518',
-        border: 'rgba(255,255,255,0.08)',
-        'text-primary': '#F4F4F5',
-        'text-secondary': '#A1A1AA',
-        'text-muted': '#71717A',
+        background: '#050D1F',
+        'background-secondary': '#0A1730',
+        card: '#0D1E3B',
+        border: 'rgba(147,197,253,0.16)',
+        'text-primary': '#EAF2FF',
+        'text-secondary': '#9FB3D1',
+        'text-muted': '#64748B',
+        accent: '#3B82F6',
+        'accent-hover': '#2563EB',
+        'accent-cyan': '#22D3EE',
       },
       fontFamily: {
         sans: ['Inter', 'Manrope', 'system-ui', 'sans-serif'],
