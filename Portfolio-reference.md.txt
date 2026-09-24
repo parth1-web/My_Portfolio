@@ -1,0 +1,1877 @@
+# ROSHAN NEPAL — DEVELOPER PORTFOLIO
+
+## MASTER IMPLEMENTATION PROMPT
+
+Build a premium, modern, responsive personal developer portfolio for:
+
+# Roshan Nepal
+
+GitHub username:
+
+`parth1-web`
+
+GitHub profile:
+
+`https://github.com/parth1-web`
+
+Primary professional identity:
+
+**.NET Backend Developer**
+
+Primary stack:
+
+**C# · ASP.NET Core · REST APIs · Entity Framework Core · PostgreSQL · Clean Architecture**
+
+---
+
+# 1. CORE OBJECTIVE
+
+Create a professional developer portfolio inspired by the visual quality, structure, animations, spacing, responsiveness and interaction patterns of the reference portfolio:
+
+`https://github.com/Nirmal-17/Nirmal.git`
+
+The reference is ONLY a design inspiration.
+
+Do NOT copy:
+
+* Personal information
+* Biography
+* Projects
+* Images
+* Social links
+* Source code
+* Branding
+* Personal identity
+
+Create an original portfolio for Roshan Nepal.
+
+The final website should look like a serious software developer's personal website rather than a generic portfolio template.
+
+---
+
+# 2. SOURCE OF TRUTH
+
+Use the following as the authoritative personal information:
+
+GitHub:
+
+https://github.com/parth1-web
+
+Name:
+
+Roshan Nepal
+
+Username:
+
+parth1-web
+
+Location:
+
+Nepal
+
+Professional identity:
+
+.NET Backend Developer
+
+GitHub profile headline:
+
+.NET Backend Developer | ASP.NET Core | C# | REST APIs | EF Core | SQL | Clean Architecture
+
+Primary interests:
+
+* Backend Engineering
+* C#
+* ASP.NET Core
+* REST APIs
+* Entity Framework Core
+* PostgreSQL
+* SQL
+* Clean Architecture
+* Authentication
+* Authorization
+* Testing
+* Docker
+* CI/CD
+* Cloud Deployment
+
+---
+
+# 3. IMPORTANT CONTENT RULE
+
+Do not invent information.
+
+Never create fake:
+
+* Companies
+* Employers
+* Employment history
+* Clients
+* Certifications
+* Awards
+* Testimonials
+* Salaries
+* Users
+* Revenue
+* Production traffic
+* Years of professional experience
+* GitHub stars
+* Project metrics
+* Job titles
+* Professional achievements
+
+Only use information that exists in the supplied project configuration or GitHub profile.
+
+If information is missing:
+
+Use a configurable placeholder.
+
+Example:
+
+LINKEDIN_URL = "#"
+
+EMAIL_URL = "#"
+
+RESUME_URL = "#"
+
+Do NOT invent URLs.
+
+---
+
+# 4. DESIGN GOAL
+
+The visual direction should be:
+
+* Premium
+* Minimal
+* Technical
+* Modern
+* Developer-focused
+* Dark-first
+* Professional
+* Slightly futuristic
+* Highly responsive
+
+Avoid:
+
+* Excessive gradients
+* Excessive glassmorphism
+* Huge decorative elements
+* Cartoon illustrations
+* Fake statistics
+* Overly colorful UI
+* Generic corporate styling
+
+The website should immediately communicate:
+
+"Backend developer who builds real applications."
+
+---
+
+# 5. COLOR SYSTEM
+
+Use a dark-first theme.
+
+Background:
+
+#09090B
+
+Secondary background:
+
+#111113
+
+Cards:
+
+#151518
+
+Border:
+
+rgba(255,255,255,0.08)
+
+Primary text:
+
+#F4F4F5
+
+Secondary text:
+
+#A1A1AA
+
+Muted text:
+
+#71717A
+
+Accent:
+
+Use a sophisticated blue/cyan/violet accent.
+
+Use accent colors sparingly.
+
+Create CSS variables so the theme can be changed easily.
+
+---
+
+# 6. TYPOGRAPHY
+
+Use:
+
+Inter
+
+or
+
+Manrope
+
+For code:
+
+JetBrains Mono
+
+Use:
+
+* Large bold headings
+* Medium-weight body text
+* Strong hierarchy
+* Comfortable line height
+* Tight heading spacing
+
+---
+
+# 7. NAVIGATION
+
+Create a sticky navigation bar.
+
+Desktop:
+
+LEFT:
+
+`Roshan Nepal`
+
+CENTER:
+
+* Home
+* About
+* Skills
+* Projects
+* Journey
+* Contact
+
+RIGHT:
+
+GitHub icon
+
+LinkedIn icon
+
+Mobile:
+
+RN / Roshan Nepal
+
+Hamburger menu
+
+Mobile navigation must animate smoothly.
+
+Navbar should become slightly more opaque when scrolling.
+
+---
+
+# 8. HERO SECTION
+
+Create a powerful developer-focused hero section.
+
+Suggested content:
+
+Small badge:
+
+`Available for opportunities`
+
+Main heading:
+
+`Hi, I'm Roshan Nepal.`
+
+Large professional title:
+
+`.NET Backend Developer`
+
+Supporting statement:
+
+`I build secure, maintainable and production-style backend systems using C#, ASP.NET Core, REST APIs and relational databases.`
+
+CTA:
+
+`View Projects`
+
+Secondary CTA:
+
+`GitHub`
+
+GitHub URL:
+
+`https://github.com/parth1-web`
+
+Optional:
+
+`Contact Me`
+
+---
+
+# 9. HERO VISUAL
+
+Do NOT use a generic developer stock image.
+
+Instead create an abstract backend engineering visual.
+
+Possible visual:
+
+Terminal window containing:
+
+```text
+$ whoami
+Roshan Nepal
+
+$ role
+.NET Backend Developer
+
+$ stack
+C# ASP.NET Core PostgreSQL
+
+$ architecture
+Clean Architecture
+
+$ focus
+Backend Engineering
+
+$ status
+Building • Testing • Learning
+```
+
+Add subtle floating technical elements:
+
+C#
+
+ASP.NET Core
+
+API
+
+PostgreSQL
+
+Docker
+
+JWT
+
+EF Core
+
+Do not make them overly animated.
+
+---
+
+# 10. HERO ANIMATION
+
+Use Framer Motion.
+
+Animate:
+
+* Badge
+* Heading
+* Description
+* Buttons
+* Terminal
+* Background elements
+
+Preferred animation:
+
+opacity:
+
+0 → 1
+
+translateY:
+
+20px → 0
+
+Duration:
+
+0.5–0.8 seconds
+
+Use staggered animations.
+
+Respect:
+
+`prefers-reduced-motion`
+
+---
+
+# 11. ABOUT SECTION
+
+Heading:
+
+`About Me`
+
+Subtitle:
+
+`Building backend systems with purpose.`
+
+Content:
+
+I’m a Computer Science student and aspiring .NET Backend Developer focused on building secure, maintainable and production-style web applications.
+
+My primary focus is the ASP.NET Core ecosystem, with hands-on experience building REST APIs, implementing authentication and authorization, working with relational databases, integrating payment systems, writing automated tests, and applying Clean Architecture principles.
+
+I enjoy turning real-world problems into reliable software while continuously improving my understanding of backend engineering, system design, databases, DevOps and distributed systems.
+
+---
+
+# 12. ABOUT VISUAL
+
+Create a developer profile card.
+
+Show:
+
+Roshan Nepal
+
+.NET Backend Developer
+
+Nepal
+
+Focus:
+
+Backend Engineering
+
+Stack:
+
+C# / ASP.NET Core
+
+Database:
+
+PostgreSQL / SQL
+
+Architecture:
+
+Clean Architecture
+
+---
+
+# 13. TECHNICAL PHILOSOPHY
+
+Section heading:
+
+`How I Build`
+
+Create four or five cards.
+
+## Architecture
+
+Clean Architecture
+
+Separation of concerns
+
+Dependency inversion
+
+Repository and service abstractions
+
+## API Development
+
+RESTful APIs
+
+DTOs
+
+Validation
+
+HTTP status codes
+
+Swagger / OpenAPI
+
+## Security
+
+JWT Authentication
+
+Role-based Authorization
+
+Password hashing
+
+Input validation
+
+Protected endpoints
+
+## Quality
+
+Unit Testing
+
+Integration Testing
+
+Automated testing
+
+Refactoring
+
+Maintainable code
+
+## Deployment
+
+Docker
+
+GitHub Actions
+
+CI/CD
+
+Environment configuration
+
+Cloud deployment
+
+---
+
+# 14. SKILLS SECTION
+
+Heading:
+
+`Technical Skills`
+
+Create visually attractive categorized skill groups.
+
+## Backend
+
+* C#
+* ASP.NET Core
+* ASP.NET Core Web API
+* REST APIs
+* LINQ
+* Dependency Injection
+* Middleware
+* Async/Await
+
+## Architecture
+
+* Clean Architecture
+* Repository Pattern
+* Service Layer
+* SOLID
+* Dependency Injection
+* DTOs
+* Separation of Concerns
+
+## Security
+
+* JWT Authentication
+* Role-Based Authorization
+* Password Hashing
+* API Security
+* Input Validation
+
+## Database
+
+* PostgreSQL
+* MySQL
+* SQL
+* Entity Framework Core
+* Database Design
+* Relationships
+* Migrations
+
+## Testing
+
+* xUnit
+* Unit Testing
+* Integration Testing
+* API Testing
+* Automated Tests
+
+## DevOps
+
+* Docker
+* GitHub Actions
+* CI/CD
+* Git
+* GitHub
+* Cloud Deployment
+
+## Tools
+
+* Swagger / OpenAPI
+* Postman
+* Git
+* GitHub
+
+---
+
+# 15. EXPERIENCE SECTION
+
+Do NOT create fake employment experience.
+
+Instead create:
+
+# Development Journey
+
+Timeline:
+
+### 01 — Computer Science
+
+Started developing programming and software engineering fundamentals.
+
+### 02 — .NET Development
+
+Focused on:
+
+C#
+
+ASP.NET Core
+
+REST APIs
+
+Entity Framework Core
+
+SQL
+
+### 03 — Real-World Applications
+
+Started building larger applications instead of only tutorial CRUD projects.
+
+Major projects include:
+
+Gaun Ko Achar / ECommerceSolution
+
+ECommerceMVC
+
+JobPortal
+
+Cafe Inventory Management System
+
+### 04 — Production-Oriented Engineering
+
+Expanded into:
+
+Authentication
+
+Authorization
+
+Payment Integration
+
+Automated Testing
+
+Docker
+
+CI/CD
+
+Cloud Deployment
+
+### 05 — Distributed Systems
+
+Currently exploring:
+
+Microservices
+
+DDD
+
+CQRS
+
+Redis
+
+RabbitMQ / Kafka
+
+gRPC
+
+OpenTelemetry
+
+Kubernetes
+
+---
+
+# 16. FEATURED PROJECTS
+
+Create a premium project showcase.
+
+Use real projects.
+
+Each project must have:
+
+* Project name
+* Description
+* Technical stack
+* Features
+* Architecture
+* GitHub link
+* Live demo when available
+* Status
+
+Use large visual cards.
+
+---
+
+# 17. PROJECT — ECOMMERCE SOLUTION
+
+Name:
+
+`ECommerceSolution`
+
+Category:
+
+`Backend / E-Commerce`
+
+Description:
+
+Production-style e-commerce backend API built with ASP.NET Core and Clean Architecture.
+
+GitHub:
+
+`https://github.com/parth1-web/ECommerceSolution`
+
+Technology:
+
+* C#
+* ASP.NET Core
+* Web API
+* Entity Framework Core
+* SQL
+* JWT
+* Docker
+* GitHub Actions
+* Swagger / OpenAPI
+* Khalti
+* eSewa
+
+Features:
+
+* JWT Authentication
+* Role-Based Authorization
+* Customer and Admin roles
+* Product Management
+* Category Management
+* Shopping Cart
+* Wishlist
+* Order Management
+* Payment Management
+* Khalti Integration
+* eSewa Integration
+* Cash on Delivery
+* Email-related backend workflows
+* Unit Testing
+* Integration Testing
+* Docker
+* GitHub Actions
+* Swagger
+* Cloud Deployment
+
+Architecture visualization:
+
+Client
+
+↓
+
+ASP.NET Core Web API
+
+↓
+
+Controllers
+
+↓
+
+Application Layer
+
+↓
+
+Domain Layer
+
+↓
+
+Infrastructure Layer
+
+↓
+
+Entity Framework Core
+
+↓
+
+Database
+
+Important:
+
+Present this as a backend engineering project.
+
+Do not reduce it to "simple ecommerce website."
+
+---
+
+# 18. PROJECT — ECOMMERCE MVC
+
+Name:
+
+`ECommerceMVC`
+
+Category:
+
+`Frontend / ASP.NET Core MVC`
+
+Description:
+
+ASP.NET Core MVC client application that consumes the ECommerceSolution REST API.
+
+GitHub:
+
+`https://github.com/parth1-web/ECommerceMVC`
+
+Technology:
+
+* C#
+* ASP.NET Core MVC
+* REST APIs
+* JWT
+* HTML
+* CSS
+* JavaScript
+
+Features:
+
+* Product browsing
+* Authentication flow
+* JWT handling
+* Shopping cart
+* Checkout
+* Order management
+* Payment integration
+* MVC controllers
+* Service layer
+* REST API integration
+
+Show this as a companion project to ECommerceSolution.
+
+Create a visual relationship:
+
+ECommerceMVC
+
+↓
+
+REST API
+
+↓
+
+ECommerceSolution
+
+---
+
+# 19. PROJECT — JOBPORTAL
+
+Name:
+
+`JobPortal`
+
+Category:
+
+`Full Stack / Backend`
+
+Description:
+
+A job portal application built using ASP.NET Core, PostgreSQL and Clean Architecture principles.
+
+Technology:
+
+* C#
+* ASP.NET Core Web API
+* ASP.NET Core MVC
+* PostgreSQL
+* Entity Framework Core
+* JWT
+* Clean Architecture
+* REST APIs
+* Automated Testing
+
+Architecture:
+
+JobPortal.Domain
+
+↓
+
+JobPortal.Application
+
+↓
+
+JobPortal.Infrastructure
+
+↓
+
+JobPortal.API
+
+↓
+
+JobPortal.MVC
+
+↓
+
+JobPortal.Tests
+
+Features to display only when implemented:
+
+* Authentication
+* Authorization
+* Candidate functionality
+* Employer functionality
+* Companies
+* Job Categories
+* Job creation
+* Job publishing
+* Job status management
+* PostgreSQL persistence
+* Automated testing
+
+Do NOT claim functionality that has not been implemented.
+
+Status:
+
+`In Development`
+
+---
+
+# 20. PROJECT — CAFE INVENTORY MANAGEMENT SYSTEM
+
+Name:
+
+`Cafe & Restaurant Inventory Management System`
+
+Category:
+
+`In Development`
+
+Description:
+
+A production-oriented inventory management platform designed for cafes and restaurants.
+
+Technology:
+
+* .NET
+* ASP.NET Core Web API
+* ASP.NET Core MVC
+* Entity Framework Core
+* PostgreSQL
+* JWT
+* Clean Architecture
+* Docker
+* GitHub Actions
+
+Planned/implemented concepts include:
+
+* Ingredient management
+* Category management
+* Unit management
+* Supplier management
+* Purchase orders
+* Stock receiving
+* Inventory ledger
+* Stock movements
+* Batch management
+* Expiry management
+* Waste management
+* Stock adjustments
+* Stock transfers
+* Menu items
+* Recipes
+* Orders
+* Inventory reports
+* Purchasing reports
+* Food-cost reports
+* CSV exports
+* PDF exports
+* Dashboard analytics
+* Notifications
+* Audit logging
+* Docker Compose
+* Unit testing
+* Integration testing
+* GitHub Actions
+
+Architecture:
+
+ASP.NET Core MVC
+
+↓
+
+Typed API Client
+
+↓
+
+ASP.NET Core Web API
+
+↓
+
+Application Layer
+
+↓
+
+Domain Layer
+
+↓
+
+Infrastructure Layer
+
+↓
+
+Entity Framework Core
+
+↓
+
+PostgreSQL
+
+IMPORTANT:
+
+Label this project:
+
+`In Development`
+
+Do not present future functionality as completed functionality.
+
+---
+
+# 21. PROJECT STATUS SYSTEM
+
+Each project card should have a status badge.
+
+Examples:
+
+`Completed`
+
+`Production-style`
+
+`In Development`
+
+`Learning Project`
+
+Do not use status badges unless supported by the project data.
+
+---
+
+# 22. PROJECT CARD DESIGN
+
+Cards should have:
+
+* Project preview
+* Project title
+* Status
+* Description
+* Technology badges
+* Key feature
+* GitHub button
+* Live demo button when available
+
+Hover:
+
+* Slight card lift
+* Border transition
+* Image scale
+* Arrow animation
+
+Do not overanimate.
+
+---
+
+# 23. PROJECT ARCHITECTURE VISUALIZATION
+
+For backend projects include an expandable architecture section.
+
+Example:
+
+```text
+Client
+   ↓
+API
+   ↓
+Application
+   ↓
+Domain
+   ↓
+Infrastructure
+   ↓
+EF Core
+   ↓
+PostgreSQL
+```
+
+Animate the flow subtly.
+
+This should become one of the portfolio's signature visual elements.
+
+---
+
+# 24. GITHUB SECTION
+
+Heading:
+
+`Explore My Code`
+
+Description:
+
+`Most of my learning happens by building real applications, experimenting with architecture, and solving backend problems.`
+
+Button:
+
+`View GitHub`
+
+URL:
+
+`https://github.com/parth1-web`
+
+If GitHub API integration is implemented:
+
+Display real repository information.
+
+Never fabricate:
+
+* Stars
+* Followers
+* Contributions
+* Commit counts
+
+If API integration is unavailable, simply display selected real repositories.
+
+---
+
+# 25. GITHUB REPOSITORY CARDS
+
+Potential cards:
+
+ECommerceSolution
+
+ECommerceMVC
+
+JobPortal
+
+Cafe Inventory Management System
+
+Only display repositories that actually exist or are intentionally configured as private/in-development projects.
+
+Do not invent repository URLs.
+
+---
+
+# 26. LEARNING SECTION
+
+Heading:
+
+`Currently Learning`
+
+Display:
+
+.NET 10
+
+Microservices
+
+Domain-Driven Design
+
+CQRS
+
+Redis
+
+RabbitMQ / Kafka
+
+gRPC
+
+OAuth / OpenID Connect
+
+OpenTelemetry
+
+Kubernetes
+
+Distributed Systems
+
+Cloud-Native Architecture
+
+Use a subtle "learning" visual rather than skill-level percentages.
+
+Do NOT use progress bars like:
+
+.NET 90%
+
+C# 95%
+
+These percentages are arbitrary and misleading.
+
+---
+
+# 27. CONTACT SECTION
+
+Heading:
+
+`Let's Build Something`
+
+Text:
+
+`Have a project idea, collaboration opportunity, or simply want to talk about backend development? Feel free to reach out.`
+
+Buttons:
+
+GitHub
+
+LinkedIn
+
+Email
+
+Use configuration values:
+
+```text
+GITHUB_URL=https://github.com/parth1-web
+LINKEDIN_URL=
+EMAIL_URL=
+RESUME_URL=
+```
+
+Do not invent missing URLs.
+
+---
+
+# 28. FOOTER
+
+Display:
+
+Roshan Nepal
+
+.NET Backend Developer
+
+C# · ASP.NET Core · PostgreSQL · Clean Architecture
+
+Links:
+
+GitHub
+
+LinkedIn
+
+Email
+
+Copyright:
+
+`© 2026 Roshan Nepal`
+
+Optional text:
+
+`Built with curiosity, code, and a lot of coffee.`
+
+---
+
+# 29. TERMINAL COMPONENT
+
+Create a reusable terminal component.
+
+Example:
+
+```text
+┌─────────────────────────────────────┐
+│ roshan@developer:~$                │
+│                                     │
+│ $ whoami                            │
+│ Roshan Nepal                        │
+│                                     │
+│ $ role                              │
+│ .NET Backend Developer              │
+│                                     │
+│ $ stack                             │
+│ C# ASP.NET Core PostgreSQL EF Core  │
+│                                     │
+│ $ architecture                     │
+│ Clean Architecture                  │
+│                                     │
+│ $ currently-learning                │
+│ Distributed Systems                 │
+│                                     │
+│ $ status                            │
+│ Building • Learning • Improving     │
+└─────────────────────────────────────┘
+```
+
+Make it responsive.
+
+On mobile it should not cause horizontal overflow.
+
+---
+
+# 30. BACKEND SYSTEM VISUAL
+
+Create a premium visual representing Roshan's engineering mindset.
+
+Nodes:
+
+Client
+
+API
+
+Authentication
+
+Application
+
+Domain
+
+Infrastructure
+
+Database
+
+Testing
+
+Docker
+
+CI/CD
+
+Payment Gateway
+
+Use animated connection lines.
+
+Keep it subtle.
+
+---
+
+# 31. RESPONSIVENESS
+
+Must work perfectly at:
+
+375px
+
+390px
+
+430px
+
+768px
+
+1024px
+
+1280px
+
+1440px
+
+Desktop:
+
+Use spacious layout.
+
+Tablet:
+
+Reduce columns.
+
+Mobile:
+
+Single-column layout.
+
+No horizontal scrolling.
+
+All buttons must be touch-friendly.
+
+---
+
+# 32. ACCESSIBILITY
+
+Implement:
+
+* Semantic HTML
+* Correct heading hierarchy
+* Keyboard navigation
+* Focus states
+* Accessible buttons
+* Accessible links
+* Alt text
+* ARIA labels
+* Color contrast
+* Reduced motion
+
+---
+
+# 33. PERFORMANCE
+
+Optimize:
+
+* Images
+* Fonts
+* JavaScript
+* Animations
+
+Lazy load images.
+
+Avoid unnecessary libraries.
+
+Avoid giant background videos.
+
+Keep animations GPU-friendly.
+
+---
+
+# 34. SEO
+
+Title:
+
+`Roshan Nepal | .NET Backend Developer`
+
+Description:
+
+`Roshan Nepal is a .NET Backend Developer focused on C#, ASP.NET Core, REST APIs, Entity Framework Core, PostgreSQL and Clean Architecture.`
+
+Add:
+
+* Open Graph
+* Twitter metadata
+* Favicon
+* Semantic HTML
+* Canonical URL when known
+
+---
+
+# 35. TECH STACK FOR THE PORTFOLIO
+
+Preferred frontend:
+
+React
+
+TypeScript
+
+Vite
+
+Tailwind CSS
+
+Framer Motion
+
+Lucide React
+
+If the existing portfolio project already uses another suitable stack:
+
+Preserve the existing stack.
+
+Do not rewrite the project unnecessarily.
+
+---
+
+# 36. COMPONENT ARCHITECTURE
+
+Suggested:
+
+```text
+src/
+│
+├── components/
+│   ├── Navbar
+│   ├── Hero
+│   ├── Terminal
+│   ├── About
+│   ├── TechnicalPhilosophy
+│   ├── Skills
+│   ├── Projects
+│   ├── ProjectCard
+│   ├── ArchitectureDiagram
+│   ├── Journey
+│   ├── GithubSection
+│   ├── Learning
+│   ├── Contact
+│   └── Footer
+│
+├── data/
+│   ├── projects
+│   ├── skills
+│   └── learning
+│
+├── config/
+│   └── portfolio
+│
+└── styles/
+    └── globals
+```
+
+Keep data separate from UI.
+
+---
+
+# 37. PORTFOLIO CONFIGURATION
+
+Create one central configuration object.
+
+Example:
+
+```typescript
+export const portfolio = {
+  name: "Roshan Nepal",
+
+  username: "parth1-web",
+
+  role: ".NET Backend Developer",
+
+  location: "Nepal",
+
+  github: "https://github.com/parth1-web",
+
+  linkedin: "",
+
+  email: "",
+
+  resume: "",
+
+  tagline:
+    "Building secure, maintainable and production-style backend systems."
+};
+```
+
+All components should consume this configuration.
+
+---
+
+# 38. PROJECT DATA
+
+Project information should live in:
+
+`src/data/projects.ts`
+
+Example structure:
+
+```typescript
+{
+  id: "ecommerce-solution",
+  title: "ECommerceSolution",
+  category: "Backend",
+  status: "Production-style",
+  description: "...",
+  technologies: [],
+  features: [],
+  github: "https://github.com/parth1-web/ECommerceSolution",
+  live: "",
+  architecture: []
+}
+```
+
+Do the same for all projects.
+
+---
+
+# 39. ANIMATION SYSTEM
+
+Use consistent animation variants.
+
+Example concepts:
+
+fadeIn
+
+slideUp
+
+slideLeft
+
+slideRight
+
+staggerChildren
+
+scaleIn
+
+Do not create dozens of different animation styles.
+
+Keep the motion language consistent.
+
+---
+
+# 40. MICRO-INTERACTIONS
+
+Implement:
+
+Button hover
+
+Arrow movement
+
+Card hover
+
+Navbar transition
+
+Section reveal
+
+Skill hover
+
+Architecture node hover
+
+Terminal cursor blink
+
+GitHub button hover
+
+Keep animations subtle.
+
+---
+
+# 41. LIGHT MODE
+
+Optional.
+
+If implemented:
+
+Dark mode:
+
+default
+
+Light mode:
+
+clean and professional
+
+Use CSS variables.
+
+Persist the user's theme preference.
+
+---
+
+# 42. ERROR HANDLING
+
+If an external API such as GitHub fails:
+
+Do not break the page.
+
+Use fallback static project data.
+
+The portfolio must work even when GitHub API is unavailable.
+
+---
+
+# 43. NO FAKE DATA
+
+This rule is critical.
+
+Never show:
+
+"10+ Projects"
+
+"5 Years Experience"
+
+"1000+ GitHub Commits"
+
+"50+ Happy Clients"
+
+"99% Success Rate"
+
+"100K Users"
+
+unless these values are explicitly provided and verified.
+
+Prefer actual project descriptions over artificial statistics.
+
+---
+
+# 44. PORTFOLIO PERSONALITY
+
+The website should feel like:
+
+A backend engineer explaining how he builds software.
+
+Not:
+
+A designer pretending to be a developer.
+
+The strongest visual identity should come from:
+
+* APIs
+* Architecture
+* Databases
+* Code
+* Systems
+* Engineering
+* Projects
+
+---
+
+# 45. REFERENCE PORTFOLIO ADAPTATION
+
+Use the reference repository only to understand:
+
+* Visual hierarchy
+* Section ordering
+* Navigation
+* Animation quality
+* Project presentation
+* Typography
+* Spacing
+* Responsive behavior
+
+Then redesign those concepts for Roshan.
+
+The finished website must be visually original.
+
+---
+
+# 46. FINAL PAGE STRUCTURE
+
+Use this order:
+
+1. Navbar
+
+2. Hero
+
+3. About
+
+4. Technical Philosophy
+
+5. Skills
+
+6. Featured Projects
+
+7. Architecture / Engineering Approach
+
+8. Development Journey
+
+9. Currently Learning
+
+10. GitHub
+
+11. Contact
+
+12. Footer
+
+---
+
+# 47. FINAL HERO
+
+The final hero should communicate this immediately:
+
+ROSHAN NEPAL
+
+.NET BACKEND DEVELOPER
+
+C#
+
+ASP.NET CORE
+
+REST APIs
+
+POSTGRESQL
+
+CLEAN ARCHITECTURE
+
+Then:
+
+`Building secure, maintainable and production-style backend systems.`
+
+---
+
+# 48. FINAL DEVELOPMENT INSTRUCTIONS
+
+Before writing code:
+
+1. Inspect the existing repository.
+2. Identify the framework.
+3. Identify package manager.
+4. Inspect existing components.
+5. Inspect existing styling.
+6. Inspect routing.
+7. Preserve reusable code.
+
+Then implement:
+
+1. Global theme
+2. Navbar
+3. Hero
+4. Terminal
+5. About
+6. Philosophy
+7. Skills
+8. Projects
+9. Architecture visualization
+10. Journey
+11. Learning
+12. GitHub
+13. Contact
+14. Footer
+15. Responsive behavior
+16. Animations
+17. SEO
+18. Accessibility
+
+---
+
+# 49. FINAL TESTING
+
+Before considering the project complete:
+
+```text
+[ ] npm install works
+
+[ ] Development server works
+
+[ ] Production build works
+
+[ ] TypeScript has no errors
+
+[ ] ESLint has no critical errors
+
+[ ] No browser console errors
+
+[ ] No horizontal overflow
+
+[ ] Mobile navigation works
+
+[ ] Desktop navigation works
+
+[ ] All project links work
+
+[ ] GitHub link works
+
+[ ] Missing social links do not break UI
+
+[ ] Contact section works
+
+[ ] Animations work
+
+[ ] Reduced motion works
+
+[ ] Images have alt text
+
+[ ] SEO metadata exists
+
+[ ] Responsive at 375px
+
+[ ] Responsive at 390px
+
+[ ] Responsive at 768px
+
+[ ] Responsive at 1024px
+
+[ ] Responsive at 1440px
+```
+
+---
+
+# 50. FINAL INSTRUCTION TO THE AI CODING AGENT
+
+Build the complete portfolio now.
+
+Use the actual identity:
+
+**Roshan Nepal**
+
+GitHub:
+
+**parth1-web**
+
+GitHub:
+
+**https://github.com/parth1-web**
+
+Primary role:
+
+**.NET Backend Developer**
+
+Primary technologies:
+
+**C# · ASP.NET Core · REST APIs · EF Core · PostgreSQL · SQL · Clean Architecture**
+
+Featured real projects:
+
+**ECommerceSolution**
+
+**ECommerceMVC**
+
+**JobPortal**
+
+**Cafe & Restaurant Inventory Management System**
+
+Do not fabricate personal information.
+
+Do not fabricate professional experience.
+
+Do not fabricate metrics.
+
+Do not fabricate links.
+
+Do not copy the reference portfolio.
+
+Create an original implementation inspired by its quality and structure.
+
+The finished website should be:
+
+* Premium
+* Modern
+* Technical
+* Fast
+* Responsive
+* Accessible
+* Recruiter-friendly
+* Developer-focused
+* Production-quality
+
+Most importantly:
+
+# Make the portfolio feel like ROSHAN NEPAL.
+
+Not like a generic template.
+Not like a copy of another developer.
+Not like an AI-generated portfolio.
+
+It should communicate real backend engineering work, real projects, real technologies, and a clear growth path toward professional .NET backend engineering.

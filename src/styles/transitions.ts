@@ -1,0 +1,9 @@
+export const floatingTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const };
+export const bounceTransition = { delay: 1.5, duration: 2, repeat: Infinity, ease: "easeInOut" as const };
+export const pulseTransition = { duration: 2, repeat: Infinity, ease: "easeInOut" as const };
+export const cursorTransition = { duration: 1, repeat: Infinity, ease: "linear" as const };
+export const cardHoverTransition = { y: -8, scale: 1.02, transition: { duration: 0.3, ease: "easeOut" as const } };
+export const buttonHoverTransition = { scale: 1.02 };
+export const buttonTapTransition = { scale: 0.98 };
+export const badgeHoverTransition = { scale: 1.05, borderColor: "rgba(59, 130, 246, 0.5)" };
+export const arrowPulseTransition = { y: [0, 2, 0], transition: { duration: 1, repeat: Infinity } };
