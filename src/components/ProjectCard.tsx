@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GithubIcon } from "./SocialIcons";
-import { ExternalLink, ChevronDown, ChevronUp, Code } from "lucide-react";
+import { ExternalLink, ChevronDown, ChevronUp, Code, Star } from "lucide-react";
 import type { Project } from "../data/projects";
 import { useAnimation } from "../hooks/useAnimation";
 import { useInView } from "../hooks/useInView";
@@ -30,8 +30,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       case "Completed":
         return "status-completed";
       case "Production-style":
+      case "Featured":
         return "status-production";
       case "In Development":
+      case "Active":
         return "status-development";
       case "Learning Project":
         return "status-learning";
@@ -66,7 +68,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1 min-w-0">
             <motion.h3
-              className="text-xl font-bold text-text-primary group-hover:text-accent transition-colors"
+              className="text-xl font-bold text-text-primary group-hover:text-accent transition-colors text-balance"
               whileHover={getWhileHover({ x: 4 })}
             >
               {project.title}
@@ -74,6 +76,25 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <motion.p className="text-sm text-text-muted mt-1 capitalize">
               {project.category}
             </motion.p>
+            <div className="flex flex-wrap items-center gap-2 mt-3 text-xs text-text-secondary">
+              {project.language && (
+                <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-blue-500/10 border border-blue-300/20 font-mono">
+                  <span className="w-2 h-2 rounded-full bg-sky-400" aria-hidden="true" />
+                  {project.language}
+                </span>
+              )}
+              {typeof project.stars === "number" && (
+                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-amber-400/10 border border-amber-300/20">
+                  <Star className="w-3 h-3 text-amber-300" aria-hidden="true" />
+                  {project.stars}
+                </span>
+              )}
+              {project.updatedAt && (
+                <span className="px-2 py-1 rounded-md bg-white/5 border border-border font-mono">
+                  Updated {project.updatedAt}
+                </span>
+              )}
+            </div>
           </div>
           {project.architecture.length > 0 && (
             <motion.button
