@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { MapPin, Briefcase, Database, Code, Mail, ExternalLink } from "lucide-react";
+import { MapPin, Briefcase, Database, Code, Mail, ExternalLink, BadgeCheck } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./SocialIcons";
+import { ProfileImage } from "./ProfileImage";
 import { portfolio } from "../config/portfolio";
 import { useAnimation } from "../hooks/useAnimation";
 import { cardHoverTransition } from "../styles/transitions";
@@ -57,12 +58,13 @@ export function About() {
               className="card space-y-4"
               whileHover={getWhileHover(cardHoverTransition)}
             >
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <Code className="w-8 h-8 text-accent" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-text-primary">{portfolio.name}</h3>
+              <div className="flex flex-col sm:flex-row items-center sm:items-center gap-4 text-center sm:text-left">
+                <ProfileImage size="sm" showStatus={false} />
+                <div className="min-w-0">
+                  <h3 className="text-xl font-bold text-text-primary flex items-center justify-center sm:justify-start gap-2">
+                    {portfolio.name}
+                    <BadgeCheck className="w-5 h-5 text-sky-400" aria-label="Verified developer" />
+                  </h3>
                   <p className="text-text-secondary">{portfolio.role}</p>
                 </div>
               </div>
@@ -141,6 +143,15 @@ export function About() {
             animate={getAnimate({ opacity: 1, x: 0 })}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
+            <motion.div className="card relative overflow-hidden text-center">
+              <div className="absolute inset-0 bg-grid-blue opacity-60" aria-hidden="true" />
+              <div className="relative py-4">
+                <ProfileImage size="xl" className="mx-auto" />
+                <p className="mt-8 text-sm text-text-secondary max-w-xs mx-auto">
+                  Backend developer from {portfolio.location} building production-style .NET systems.
+                </p>
+              </div>
+            </motion.div>
             <motion.div className="card">
               <h3 className="text-lg font-semibold text-text-primary mb-4 flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-accent" aria-hidden="true" />

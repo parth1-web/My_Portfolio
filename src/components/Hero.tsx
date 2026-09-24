@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink, MapPin, Star } from "lucide-react";
 import { GithubIcon } from "./SocialIcons";
 import { Terminal } from "./Terminal";
+import { ProfileImage } from "./ProfileImage";
 import { portfolio } from "../config/portfolio";
 import { useAnimation } from "../hooks/useAnimation";
 import { floatingTransition, bounceTransition } from "../styles/transitions";
@@ -133,11 +134,34 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            className="relative"
+            className="relative space-y-6"
             initial={getInitial({ opacity: 0, x: 30 })}
             animate={getAnimate({ opacity: 1, x: 0 })}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
+            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center gap-6">
+              <ProfileImage size="lg" />
+              <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 w-full max-w-md">
+                <div className="card !p-4 text-center">
+                  <p className="text-2xl font-bold gradient-text">6+</p>
+                  <p className="text-xs text-text-secondary mt-1">Public repos</p>
+                </div>
+                <div className="card !p-4 text-center">
+                  <p className="text-2xl font-bold gradient-text flex items-center justify-center gap-1">
+                    <Star className="w-4 h-4 text-amber-300" aria-hidden="true" />5
+                  </p>
+                  <p className="text-xs text-text-secondary mt-1">Stars earned</p>
+                </div>
+                <div className="card !p-4 text-center">
+                  <p className="text-2xl font-bold gradient-text">C#</p>
+                  <p className="text-xs text-text-secondary mt-1">Primary stack</p>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-text-secondary justify-center sm:justify-start">
+              <MapPin className="w-4 h-4 text-accent-cyan" aria-hidden="true" />
+              <span>{portfolio.location} · Working worldwide via remote</span>
+            </div>
             <Terminal />
           </motion.div>
         </div>
