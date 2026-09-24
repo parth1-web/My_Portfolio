@@ -1,0 +1,5 @@
+# Robots.txt for Roshan Nepal Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://parth1-web.github.io/My_Portfolio/sitemap.xml
