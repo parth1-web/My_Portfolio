@@ -23,9 +23,15 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-16 lg:pt-20 overflow-hidden"
+      className="relative min-h-[100svh] flex items-center justify-center pt-24 pb-16 sm:pt-28 lg:pt-20 overflow-hidden"
       aria-labelledby="hero-heading"
     >
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute inset-0 bg-grid-blue" />
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] max-w-[110vw] h-[380px] rounded-full bg-blue-600/25 blur-[120px]" />
+        <div className="absolute top-1/3 -left-24 w-72 h-72 rounded-full bg-cyan-400/15 blur-[100px]" />
+        <div className="absolute bottom-0 -right-24 w-80 h-80 rounded-full bg-indigo-500/20 blur-[110px]" />
+      </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         {techElements.map((tech, index) => (
           <motion.div
