@@ -1,32 +1,116 @@
-# React + TypeScript + Vite
+# Roshan Nepal — .NET Backend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A premium, modern, responsive personal developer portfolio built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React + Custom SVG icons
+- **Deployment**: GitHub Pages / Vercel
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dark-first theme** with custom color system
+- **Terminal-inspired Hero** with animated command output
+- **Interactive Architecture Diagram** with animated nodes and connections
+- **Project Cards** with expandable architecture flow
+- **Development Journey Timeline** with animated progress
+- **Skills Section** organized by domain
+- **Learning Section** with floating animations
+- **Full Responsiveness** (375px - 1440px)
+- **Accessibility** (WCAG 2.1 AA)
+- **Reduced Motion** support
+- **SEO Optimized**
 
-## Expanding the Oxlint configuration
+## 📦 Project Structure
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Terminal.tsx
+│   ├── About.tsx
+│   ├── TechnicalPhilosophy.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── ProjectCard.tsx
+│   ├── Architecture.tsx
+│   ├── ArchitectureVisualization.tsx
+│   ├── Journey.tsx
+│   ├── Learning.tsx
+│   ├── GithubSection.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   └── SocialIcons.tsx
+├── config/
+│   └── portfolio.ts
+├── data/
+│   ├── projects.ts
+│   ├── skills.ts
+│   ├── journey.ts
+│   ├── learning.ts
+│   └── philosophy.ts
+├── hooks/
+│   ├── useAnimation.ts
+│   ├── useInView.ts
+│   └── useReducedMotion.ts
+├── styles/
+│   ├── animations.ts
+│   └── transitions.ts
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🛠️ Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 🎨 Customization
+
+Edit `src/config/portfolio.ts` to update personal information:
+
+```typescript
+export const portfolio = {
+  name: "Roshan Nepal",
+  username: "parth1-web",
+  role: ".NET Backend Developer",
+  location: "Nepal",
+  github: "https://github.com/parth1-web",
+  linkedin: "", // Add your LinkedIn URL
+  email: "",    // Add your email
+  resume: "",   // Add your resume URL
+  tagline: "Building secure, maintainable and production-style backend systems.",
+};
+```
+
+## 📄 Featured Projects
+
+1. **ECommerceSolution** - Production-style e-commerce backend API with Clean Architecture
+2. **ECommerceMVC** - ASP.NET Core MVC client consuming the REST API
+3. **JobPortal** - Job portal with ASP.NET Core, PostgreSQL, Clean Architecture
+4. **Cafe Inventory Management** - Inventory management platform for cafes/restaurants
+
+## 📝 License
+
+MIT License - feel free to use as inspiration for your own portfolio.
+
+---
+
+Built with curiosity, code, and a lot of coffee ☕
