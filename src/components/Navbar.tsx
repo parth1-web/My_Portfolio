@@ -148,9 +148,6 @@ export function Navbar() {
                 <LinkedinIcon className="w-5 h-5" aria-hidden="true" />
               </a>
             )}
-            <a href="#contact" className="btn-primary !py-2.5 !px-5 !text-sm ml-1">
-              Hire Me
-            </a>
           </div>
 
           <button
@@ -235,9 +232,6 @@ export function Navbar() {
                         <LinkedinIcon className="w-5 h-5" />
                       </a>
                     )}
-                    <a href="#contact" onClick={closeMobileMenu} className="btn-primary flex-1 !py-3">
-                      Hire Me
-                    </a>
                   </div>
                 </div>
               </motion.div>

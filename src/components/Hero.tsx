@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ExternalLink, MapPin, Star } from "lucide-react";
 import { GithubIcon } from "./SocialIcons";
 import { Terminal } from "./Terminal";
@@ -7,18 +8,61 @@ import { portfolio } from "../config/portfolio";
 import { useAnimation } from "../hooks/useAnimation";
 import { floatingTransition, bounceTransition } from "../styles/transitions";
 
-const techElements = [
-  "C#",
-  "ASP.NET Core",
-  "API",
-  "PostgreSQL",
-  "Docker",
-  "JWT",
-  "EF Core",
+const roles = [
+  ".NET Backend Developer",
+  "ASP.NET Core Specialist",
+  "REST API Builder",
+  "Clean Architecture Advocate",
 ];
 
+function CountUp({ to, suffix = "" }: { to: number; suffix?: string }) {
+  const { reducedMotion } = useAnimation();
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (reducedMotion) {
+      setValue(to);
+      return;
+    }
+    let frame = 0;
+    const start = performance.now();
+    const duration = 1200;
+    const tick = (now: number) => {
+      const p = Math.min((now - start) / duration, 1);
+      setValue(Math.round(to * (1 - Math.pow(1 - p, 3))));
+      if (p < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [to, reducedMotion]);
+
+  return (
+    <span>
+      {value}
+      {suffix}
+    </span>
+  );
+}
+
 export function Hero() {
-  const { getInitial, getAnimate } = useAnimation();
+  const { getInitial, getAnimate, reducedMotion } = useAnimation();
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    if (reducedMotion) return;
+    const id = setInterval(() => setRoleIndex((i) => (i + 1) % roles.length), 2600);
+    return () => clearInterval(id);
+  }, [reducedMotion]);
+
+  const techElements = [
+    "C#",
+    "ASP.NET Core",
+    "API",
+    "PostgreSQL",
+    "Docker",
+    "JWT",
+    "EF Core",
+  ];
 
   return (
     <section
@@ -81,14 +125,37 @@ export function Hero() {
               Hi, I'm <span className="text-accent">{portfolio.name}</span>.
             </motion.h1>
 
-            <motion.p
-              className="text-xl lg:text-2xl font-medium text-accent tracking-tight"
-              initial={getInitial({ opacity: 0, y: 20 })}
-              animate={getAnimate({ opacity: 1, y: 0 })}
-              transition={{ delay: 0.3, duration: 0.6 }}
+            <div
+              className="text-xl lg:text-2xl font-medium tracking-tight min-h-[2.2rem]"
+              aria-live="polite"
             >
-              {portfolio.role}
-            </motion.p>
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={roles[roleIndex]}
+                  className="gradient-text"
+                  initial={getInitial({ opacity: 0, y: 12 })}
+                  animate={getAnimate({ opacity: 1, y: 0 })}
+                  exit={getInitial({ opacity: 0, y: -12 })}
+                  transition={{ duration: 0.35 }}
+                >
+                  {roles[roleIndex]}
+                </motion.span>
+              </AnimatePresence>
+            </div>
+            <div className="flex items-center gap-2" role="tablist" aria-label="Choose hero role">
+              {roles.map((role, i) => (
+                <button
+                  key={role}
+                  role="tab"
+                  aria-selected={i === roleIndex}
+                  aria-label={role}
+                  onClick={() => setRoleIndex(i)}
+                  className={`h-2 rounded-full transition-all duration-300 min-w-[8px] min-h-[8px] ${
+                    i === roleIndex ? "w-8 bg-sky-400" : "w-2 bg-white/20 hover:bg-white/40"
+                  }`}
+                />
+              ))}
+            </div>
 
             <motion.p
               className="text-lg lg:text-xl text-text-secondary max-w-xl leading-relaxed"
@@ -149,12 +216,12 @@ export function Hero() {
               <ProfileImage size="lg" />
               <div className="grid grid-cols-3 sm:grid-cols-3 gap-3 w-full max-w-md">
                 <div className="card !p-4 text-center">
-                  <p className="text-2xl font-bold gradient-text">6+</p>
+                  <p className="text-2xl font-bold gradient-text"><CountUp to={5} suffix="+" /></p>
                   <p className="text-xs text-text-secondary mt-1">Public repos</p>
                 </div>
                 <div className="card !p-4 text-center">
                   <p className="text-2xl font-bold gradient-text flex items-center justify-center gap-1">
-                    <Star className="w-4 h-4 text-amber-300" aria-hidden="true" />5
+                    <Star className="w-4 h-4 text-amber-300" aria-hidden="true" /><CountUp to={5} />
                   </p>
                   <p className="text-xs text-text-secondary mt-1">Stars earned</p>
                 </div>
